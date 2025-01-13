@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Diffuser Questionnaire</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0e68c; /* Khaki background */
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #fff; /* White container */
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2 {
+            text-align: center;
+            color: #4a4a4a;
+        }
+        h1 {
+            margin-bottom: 10px;
+            font-size: 26px;
+        }
+        h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+            color: #666;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        .options {
+            margin-bottom: 10px;
+        }
+        .option {
+            margin: 5px 0;
+        }
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            background-color: #5cb85c;
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Diffuser Questionnaire</h1>
+        <h2>Help us personalize your experience</h2>
+        <form>
+            <!-- Section 1: Mood and Emotions -->
+            <div class="section">
+                <div class="section-title">Section 1: Mood and Emotions</div>
+                <div class="question">
+                    <div class="question-title">1. How would you describe your current mood?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="mood" value="Stressed"> Stressed</div>
+                        <div class="option"><input type="radio" name="mood" value="Relaxed"> Relaxed</div>
+                        <div class="option"><input type="radio" name="mood" value="Tired"> Tired</div>
+                        <div class="option"><input type="radio" name="mood" value="Anxious"> Anxious</div>
+                        <div class="option"><input type="radio" name="mood" value="Happy"> Happy</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">2. Do you often feel overwhelmed by work or studies?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="overwhelmed" value="Frequently"> Yes, frequently</div>
+                        <div class="option"><input type="radio" name="overwhelmed" value="Sometimes"> Sometimes</div>
+                        <div class="option"><input type="radio" name="overwhelmed" value="Rarely"> Rarely</div>
+                        <div class="option"><input type="radio" name="overwhelmed" value="Not at all"> Not at all</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">3. How do you typically deal with stress or negative emotions?</div>
+
+                    <div class="options">
+                        <div class="option"><input type="radio" name="stress-relief" value="Listening to music"> Listening to music</div>
+                        <div class="option"><input type="radio" name="stress-relief" value="Meditating"> Meditating</div>
+                        <div class="option"><input type="radio" name="stress-relief" value="Aromatherapy"> Using aromatherapy</div>
+                        <div class="option"><input type="radio" name="stress-relief" value="Other"> Other (please specify)</div>
+                        <textarea placeholder="Please specify"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 2: Physical and Mental Wellness -->
+            <div class="section">
+                <div class="section-title">Section 2: Physical and Mental Wellness</div>
+                <div class="question">
+                    <div class="question-title">4. Are you currently experiencing any of the following physical discomforts?</div>
+                    <div class="options">
+                        <div class="option"><input type="checkbox" name="discomfort" value="Cold"> Cold or flu symptoms</div>
+                        <div class="option"><input type="checkbox" name="discomfort" value="Headache"> Headache</div>
+                        <div class="option"><input type="checkbox" name="discomfort" value="Motion sickness"> Motion sickness</div>
+                        <div class="option"><input type="checkbox" name="discomfort" value="None"> None of the above</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">5. How often do you feel a lack of energy during the day?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="energy" value="Very often"> Very often</div>
+                        <div class="option"><input type="radio" name="energy" value="Sometimes"> Sometimes</div>
+                        <div class="option"><input type="radio" name="energy" value="Rarely"> Rarely</div>
+                        <div class="option"><input type="radio" name="energy" value="Never"> Never</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">6. Do you find it challenging to concentrate or stay focused?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="focus" value="Yes"> Yes, frequently</div>
+                        <div class="option"><input type="radio" name="focus" value="Occasionally"> Occasionally</div>
+                        <div class="option"><input type="radio" name="focus" value="No"> Not at all</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 3: Preferences for Aromatherapy -->
+            <div class="section">
+                <div class="section-title">Section 3: Preferences for Aromatherapy</div>
+                <div class="question">
+                    <div class="question-title">7. Which type of aroma do you prefer?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="aroma" value="Floral"> Floral (e.g., Lavender, Rose)</div>
+                        <div class="option"><input type="radio" name="aroma" value="Citrus"> Citrus (e.g., Lemon, Orange)</div>
+                        <div class="option"><input type="radio" name="aroma" value="Herbal"> Herbal (e.g., Peppermint, Tea Tree)</div>
+                        <div class="option"><input type="radio" name="aroma" value="Sweet"> Sweet (e.g., Vanilla, CocoPandan)</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">8. Do you have any allergies or sensitivities to certain scents?</div>
+
+                    <textarea placeholder="Please specify"></textarea>
+                </div>
+                <div class="question">
+                    <div class="question-title">9. What is your primary goal for using aromatherapy?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="goal" value="Relaxation"> Relaxation</div>
+                        <div class="option"><input type="radio" name="goal" value="Focus"> Improving focus</div>
+                        <div class="option"><input type="radio" name="goal" value="Energy"> Boosting energy</div>
+                        <div class="option"><input type="radio" name="goal" value="Stress relief"> Stress relief</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section 4: Customization and Feedback -->
+            <div class="section">
+                <div class="section-title">Section 4: Customization and Feedback</div>
+                <div class="question">
+                    <div class="question-title">10. Would you like the diffuser to automatically adjust the scent based on your mood?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="adjust-scent" value="Yes"> Yes</div>
+                        <div class="option"><input type="radio" name="adjust-scent" value="No"> No</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">11. How likely are you to use aromatherapy to improve your mood and productivity?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio
+
+type="radio" name="likely-to-use" value="Very likely"> Very likely</div>
+                        <div class="option"><input type="radio" name="likely-to-use" value="Somewhat likely"> Somewhat likely</div>
+                        <div class="option"><input type="radio" name="likely-to-use" value="Neutral"> Neutral</div>
+                        <div class="option"><input type="radio" name="likely-to-use" value="Unlikely"> Unlikely</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">12. If the diffuser could suggest a scent based on your voice tone or QR code input, would you find it helpful?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="voice-suggestion" value="Yes"> Yes</div>
+                        <div class="option"><input type="radio" name="voice-suggestion" value="Maybe"> Maybe</div>
+                        <div class="option"><input type="radio" name="voice-suggestion" value="No"> No</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">13. Do you have any specific wellness needs or goals you’d like the diffuser to address?</div>
+                    <textarea placeholder="Please specify"></textarea>
+                </div>
+            </div>
+
+            <!-- Final Section: Aroma Recommendation -->
+            <div class="section">
+                <div class="section-title">Final Section: Aroma Recommendation</div>
+                <div class="question">
+                    <div class="question-title">14. Based on your answers, the Smart Diffuser recommends the following aroma to suit your mood and needs:</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="recommended-aroma" value="Lavender"> Lavender: For relaxation and stress relief</div>
+                        <div class="option"><input type="radio" name="recommended-aroma" value="Peppermint"> Peppermint: For focus and mental clarity</div>
+                        <div class="option"><input type="radio" name="recommended-aroma" value="Citrus"> Citrus: For an energy boost</div>
+
+                        <div class="option"><input type="radio" name="recommended-aroma" value="Eucalyptus"> Eucalyptus: For cold relief and improved breathing</div>
+                        <div class="option"><input type="radio" name="recommended-aroma" value="CocoPandan"> CocoPandan: For calming anxiety and emotional balance</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">15. Would you like the diffuser to automatically adjust the aroma based on this recommendation?</div>
+                    <div class="options">
+                        <div class="option"><input type="radio" name="auto-adjust" value="Yes"> Yes</div>
+                        <div class="option"><input type="radio" name="auto-adjust" value="No"> No</div>
+                    </div>
+                </div>
+                <div class="question">
+                    <div class="question-title">16. If none of these aromas feel suitable, please suggest any specific scent preferences or needs:</div>
+                    <textarea placeholder="Please specify"></textarea>
+                </div>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
+
